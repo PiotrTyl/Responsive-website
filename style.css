@@ -1,0 +1,245 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: "Open Sans", sans-serif;
+	font-family: "Raleway", sans-serif;
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+}
+
+.hero-bg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.hero-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+}
+
+.hero-text h1 {
+	margin-bottom: 5px;
+	text-shadow: 3px 3px 5px black;
+	color: white;
+}
+
+.hero-text span {
+	text-transform: uppercase;
+	color: skyblue;
+}
+
+.section-title {
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+section {
+	scroll-margin-top: 70px;
+	text-align: center;
+}
+
+/* navigation */
+
+nav {
+	position: sticky;
+	top: 0;
+	height: 60px;
+	line-height: 60px;
+	background-color: skyblue;
+	text-align: center;
+	z-index: 10;
+}
+
+.bar-icon {
+	display: block;
+	margin-left: auto;
+	padding: 0 30px;
+	line-height: 60px;
+	font-size: 30px;
+	background: none;
+	border: none;
+	cursor: pointer;
+	transition: color 0.3s;
+}
+
+.bar-icon:hover {
+	color: gold;
+}
+
+.nav-items {
+	display: none;
+}
+
+.nav-items a {
+	padding: 0 30px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: black;
+	transition: color 0.3s;
+}
+
+.nav-items a:hover {
+	color: gold;
+}
+
+/* header */
+
+.header {
+	position: relative;
+	height: 330px;
+	background-image: url("./img/small_picture.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+/* main */
+
+main {
+	margin: 70px 0;
+}
+
+/* O nas */
+
+.about-us-info {
+	margin-bottom: 10px;
+	padding: 0 20px;
+}
+
+/* produkty */
+
+.products {
+	margin: 60px auto;
+}
+
+.product {
+	position: relative;
+	height: 300px;
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	font-size: 16px;
+}
+
+.product:hover h3 {
+	transform: scale(1.5);
+}
+
+.products h3 {
+	text-transform: uppercase;
+	transition: 0.4s;
+}
+
+.first-product {
+	background-image: url(./img/buildings-598205_640.jpg);
+}
+
+.second-product {
+	background-image: url(./img/children-1822688_640.jpg);
+}
+
+.third-product {
+	background-image: url(./img/people-2605980_640.jpg);
+}
+
+.fourth-product {
+	background-image: url(./img/usa-2378383_640.jpg);
+}
+
+/* kontakt */
+
+.contact {
+	text-align: center;
+	border: solid;
+	background-color: whitesmoke;
+}
+
+.contact h3 {
+	margin: 30px 0 5px;
+	text-transform: uppercase;
+}
+
+/* footer */
+
+footer {
+	padding: 30px 10px;
+	text-align: center;
+	background-color: skyblue;
+}
+
+@media (min-width: 768px) {
+	.bar-icon {
+		display: none;
+	}
+	.nav-items {
+		display: block;
+	}
+	.nav-items a {
+		padding: 0 30px;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-weight: bold;
+		color: black;
+		transition: color 0.3s;
+	}
+
+	.nav-items a:hover {
+		color: gold;
+	}
+
+	.header {
+		height: 400px;
+		background-image: url("./img/big_picture.jpg");
+	}
+
+	.hero-text h1 {
+		font-size: 36px;
+	}
+
+	.hero-text p {
+		font-size: 18px;
+	}
+
+	.products h3 {
+		font-size: 30px;
+	}
+}
+
+@media (min-width: 992px) {
+	.products-box {
+		font-size: 0;
+	}
+
+	.product {
+		display: inline-block;
+		width: 45%;
+	}
+}
+
+@media (min-width: 1200px) {
+	.hero-text h1 {
+		font-size: 42px;
+	}
+
+	.hero-text p {
+		font-size: 20px;
+	}
+}
